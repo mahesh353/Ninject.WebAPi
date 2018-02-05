@@ -1,0 +1,5 @@
+D:\practise\Ninject.WebApi\Ninject.WebApi.Core\bin\Debug\Ninject.WebApi.Core.dll
+D:\practise\Ninject.WebApi\Ninject.WebApi.Core\bin\Debug\Ninject.WebApi.Core.pdb
+D:\practise\Ninject.WebApi\Ninject.WebApi.Core\obj\Debug\Ninject.WebApi.Core.csprojResolveAssemblyReference.cache
+D:\practise\Ninject.WebApi\Ninject.WebApi.Core\obj\Debug\Ninject.WebApi.Core.dll
+D:\practise\Ninject.WebApi\Ninject.WebApi.Core\obj\Debug\Ninject.WebApi.Core.pdb
