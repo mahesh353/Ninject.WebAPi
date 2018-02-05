@@ -9,7 +9,7 @@ namespace Ninject.WebApi.Data.Repositories
     public class StudentRepository : IStudentRepository
     {
         public List<Student> stundentList = new List<Student>();
-        MPEntities NinjectEntities = new MPEntities();
+        
 
         public StudentRepository()
         {
@@ -18,10 +18,13 @@ namespace Ninject.WebApi.Data.Repositories
         }
         public IEnumerable<Student> GetStudents()
         {
-            var students = NinjectEntities.STUDENTs.ToList();
-            foreach (var item in students)
+            using (MPEntities NinjectEntities = new MPEntities())
             {
-                stundentList.Add(new Student { Id = item.ID, Name = item.NAME });
+                var students = NinjectEntities.STUDENTs.ToList();
+                foreach (var item in students)
+                {
+                    stundentList.Add(new Student { Id = item.ID, Name = item.NAME });
+                }
             }
             return stundentList;
         }
