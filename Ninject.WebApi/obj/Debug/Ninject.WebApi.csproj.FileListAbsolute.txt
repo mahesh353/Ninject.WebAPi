@@ -208,3 +208,8 @@ D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Owin.xml
 D:\practise\Ninject\Ninject.WebApi\obj\Debug\Ninject.WebApi.csprojResolveAssemblyReference.cache
 D:\practise\Ninject\Ninject.WebApi\obj\Debug\Ninject.WebApi.dll
 D:\practise\Ninject\Ninject.WebApi\obj\Debug\Ninject.WebApi.pdb
+D:\practise\Ninject\Ninject.WebApi\bin\WebApiContrib.Formatting.Jsonp.dll
+D:\practise\Ninject\Ninject.WebApi\bin\WebApiContrib.Formatting.Jsonp.pdb
+D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Cors.dll
+D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Cors.dll
+D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Cors.xml
