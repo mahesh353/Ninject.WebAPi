@@ -14,18 +14,22 @@ namespace Ninject.WebApi.Data.Repositories
         public StudentRepository()
         {
 
-//            stundents.Add(new Student { Id = 10, Name = "Mahesh" });
+            stundentList.Add(new Student { Id = 10, Name = "Mahesh" });
+            stundentList.Add(new Student { Id = 11, Name = "Pankaj" });
+            stundentList.Add(new Student { Id = 12, Name = "Shubham" });
+
         }
+
         public IEnumerable<Student> GetStudents()
         {
-            using (MPEntities NinjectEntities = new MPEntities())
-            {
-                var students = NinjectEntities.STUDENTs.ToList();
-                foreach (var item in students)
-                {
-                    stundentList.Add(new Student { Id = item.ID, Name = item.NAME });
-                }
-            }
+            //using (MPEntities NinjectEntities = new MPEntities())
+            //{
+            //    var employees = NinjectEntities.EMPLOYEEs.ToList();
+            //    foreach (var item in employees)
+            //    {
+            //        stundentList.Add(new Student { Id = item.ID, Name = item.NAME });
+            //    }
+            //}
             return stundentList;
         }
     }

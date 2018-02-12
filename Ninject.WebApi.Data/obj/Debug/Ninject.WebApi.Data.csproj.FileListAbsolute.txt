@@ -12,3 +12,17 @@ D:\practise\Ninject.WebApi\Ninject.WebApi.Data\bin\Debug\EntityFramework.dll
 D:\practise\Ninject.WebApi\Ninject.WebApi.Data\bin\Debug\EntityFramework.SqlServer.dll
 D:\practise\Ninject.WebApi\Ninject.WebApi.Data\bin\Debug\EntityFramework.xml
 D:\practise\Ninject.WebApi\Ninject.WebApi.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\practise\Ninject\Ninject.WebApi.Data\obj\Debug\Ninject.WebApi.Data.csprojResolveAssemblyReference.cache
+D:\practise\Ninject\Ninject.WebApi.Data\obj\Debug\Ninject.WebApi.Data.dll
+D:\practise\Ninject\Ninject.WebApi.Data\obj\Debug\Ninject.WebApi.Data.pdb
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Ninject.WebApi.Data.dll.config
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Ninject.WebApi.Data.dll
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Ninject.WebApi.Data.pdb
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\EntityFramework.dll
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Infrastructure.Core.dll
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Ninject.WebApi.Core.dll
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Ninject.WebApi.Core.pdb
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\EntityFramework.xml
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\practise\Ninject\Ninject.WebApi.Data\bin\Debug\Infrastructure.Core.pdb

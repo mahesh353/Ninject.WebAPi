@@ -1,5 +1,6 @@
 ﻿using Ninject.WebApi.Core.Models;
 using Ninject.WebApi.Core.RepositoryInterfaces;
+using Ninject.WebApi.Filters;
 using System.Collections.Generic;
 using System.Web.Http;
 
