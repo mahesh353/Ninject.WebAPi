@@ -213,3 +213,4 @@ D:\practise\Ninject\Ninject.WebApi\bin\WebApiContrib.Formatting.Jsonp.pdb
 D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Cors.dll
 D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Cors.dll
 D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Cors.xml
+D:\practise\Ninject\Ninject.WebApi\bin\Swashbuckle.Core.dll

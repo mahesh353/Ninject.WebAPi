@@ -54,28 +54,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EMPLOYEE.cs">
-      <DependentUpon>NinjectDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NinjectDataModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NinjectDataModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NinjectDataModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NinjectDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NinjectDataModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NinjectDataModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
-    <Compile Include="STUDENT.cs">
-      <DependentUpon>NinjectDataModel.tt</DependentUpon>
+    <Compile Include="Student.cs">
+      <DependentUpon>StudentDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDataModel.edmx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -86,29 +83,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="NinjectDataModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NinjectDataModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="NinjectDataModel.edmx.diagram">
-      <DependentUpon>NinjectDataModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="NinjectDataModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NinjectDataModel.edmx</DependentUpon>
-      <LastGenOutput>NinjectDataModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="NinjectDataModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NinjectDataModel.edmx</DependentUpon>
-      <LastGenOutput>NinjectDataModel.cs</LastGenOutput>
-    </Content>
+    <EntityDeploy Include="StudentDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StudentDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="StudentDataModel.edmx.diagram">
+      <DependentUpon>StudentDataModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StudentDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StudentDataModel.edmx</DependentUpon>
+      <LastGenOutput>StudentDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="StudentDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StudentDataModel.edmx</DependentUpon>
+      <LastGenOutput>StudentDataModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,6 +5,6 @@ namespace Ninject.WebApi.Core.RepositoryInterfaces
 {
     public interface IStudentRepository
     {
-        IEnumerable<Student> GetStudents();
+        List<Student> GetStudents();
     }
 }

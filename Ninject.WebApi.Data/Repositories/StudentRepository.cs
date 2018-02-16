@@ -8,28 +8,30 @@ namespace Ninject.WebApi.Data.Repositories
 {
     public class StudentRepository : IStudentRepository
     {
-        public List<Student> stundentList = new List<Student>();
+        public List<Ninject.WebApi.Core.Models.Student> stundentList = new List<Ninject.WebApi.Core.Models.Student>();
         
 
         public StudentRepository()
         {
 
-            stundentList.Add(new Student { Id = 10, Name = "Mahesh" });
-            stundentList.Add(new Student { Id = 11, Name = "Pankaj" });
-            stundentList.Add(new Student { Id = 12, Name = "Shubham" });
+            
 
         }
 
-        public IEnumerable<Student> GetStudents()
+        List<Core.Models.Student> IStudentRepository.GetStudents()
         {
-            //using (MPEntities NinjectEntities = new MPEntities())
-            //{
-            //    var employees = NinjectEntities.EMPLOYEEs.ToList();
-            //    foreach (var item in employees)
-            //    {
-            //        stundentList.Add(new Student { Id = item.ID, Name = item.NAME });
-            //    }
-            //}
+            using (MPEntities mp = new MPEntities())
+            {
+                var students = mp.Students.ToList();
+                foreach (var studentItem in students)
+                {
+                    Core.Models.Student student = new Core.Models.Student();
+                    student.Id = studentItem.Id;
+                    student.Name = studentItem.Name;
+                    student.Address = studentItem.Address;
+                    stundentList.Add(student);
+                }
+            }
             return stundentList;
         }
     }

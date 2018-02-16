@@ -12,9 +12,10 @@ namespace Ninject.WebApi.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class STUDENT
+    public partial class Student
     {
-        public int ID { get; set; }
-        public string NAME { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
     }
 }

@@ -13,6 +13,8 @@ namespace Ninject.WebApi
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+          
         }
+        
     }
 }
