@@ -22,8 +22,9 @@ namespace Ninject.WebApi.Filters
             else
             {
                 var authHeader = actionContext.Request.Headers.Authorization.Parameter;
-                //var _loginRepository = (ILoginRepository)actionContext.RequestContext.GetService(typeof(ILoginRepository));
-                var _loginRepository = new LoginRepository();//(ILoginRepository)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(ILoginRepository));
+                var _loginRepository = (ILoginRepository)actionContext.RequestContext.Configuration.DependencyResolver.GetService(typeof(ILoginRepository));//.GetService(typeof(ILoginRepository));
+                //var _loginRepository = new LoginRepository();
+                //var _loginRepository = (ILoginRepository)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(ILoginRepository));
 
                 authTokenVerify = new AuthTokenVerify(_loginRepository);
                 if (!authTokenVerify.VerifyAuthToken(authHeader))//Verify the token and return bool)
