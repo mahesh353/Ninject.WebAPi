@@ -20,7 +20,7 @@ namespace Ninject.WebApi
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
-            config.Filters.Add(new AuthorizeTokenFilter());
+            //config.Filters.Add(new AuthorizeTokenFilter());
 
             //create the instance of jsonp formatter
             //var jsonpFormatter = new JsonpMediaTypeFormatter(config.Formatters.JsonFormatter);

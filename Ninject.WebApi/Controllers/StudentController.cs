@@ -6,6 +6,7 @@ using System.Web.Http;
 
 namespace Ninject.WebApi.Controllers
 {
+    [AuthorizeTokenFilter]
     public class StudentController : ApiController
     {
         private IStudentRepository _studentRepository;
