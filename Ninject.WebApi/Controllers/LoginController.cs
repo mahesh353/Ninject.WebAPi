@@ -1,13 +1,10 @@
 ﻿using Ninject.WebApi.Core.RepositoryInterfaces;
-using Ninject.WebApi.Filters;
-using Ninject.WebApi.Models;
-using System;
 using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace Ninject.WebApi.Controllers
 {
-   
+
     public class LoginController : ApiController
     {
         private ILoginRepository _loginRepository;

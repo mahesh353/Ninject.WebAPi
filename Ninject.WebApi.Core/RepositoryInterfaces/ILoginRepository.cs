@@ -1,5 +1,4 @@
 ﻿using Ninject.WebApi.Core.Models;
-using System.Threading.Tasks;
 
 namespace Ninject.WebApi.Core.RepositoryInterfaces
 {

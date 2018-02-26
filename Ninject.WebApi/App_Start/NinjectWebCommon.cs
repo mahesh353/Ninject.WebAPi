@@ -1,14 +1,14 @@
-﻿using System;
-using System.Web;
-using System.Web.Http;
-using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+﻿using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 using Ninject;
 using Ninject.Web.Common;
-using Ninject.Web.WebApi;
-using SimpleWebApi2.Ninject.App_Start;
 using Ninject.Web.Common.WebHost;
+using Ninject.Web.WebApi;
 using Ninject.WebApi.Core.RepositoryInterfaces;
 using Ninject.WebApi.Data.Repositories;
+using SimpleWebApi2.Ninject.App_Start;
+using System;
+using System.Web;
+using System.Web.Http;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(NinjectWebCommon), "Stop")]

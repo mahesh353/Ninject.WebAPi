@@ -1,5 +1,4 @@
 ﻿using Ninject.WebApi.Core.RepositoryInterfaces;
-using Ninject.WebApi.Data.Repositories;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http.Controllers;
@@ -9,10 +8,8 @@ namespace Ninject.WebApi.Filters
 {
     public class AuthorizeTokenFilter : AuthorizationFilterAttribute
     {
-
         private const string AUTHORIZATION = "Authorization";
         AuthTokenVerify authTokenVerify = null;
-
         public override void OnAuthorization(HttpActionContext actionContext)
         {
             if (actionContext.Request.Headers.Authorization == null)
@@ -22,19 +19,15 @@ namespace Ninject.WebApi.Filters
             else
             {
                 var authHeader = actionContext.Request.Headers.Authorization.Parameter;
-                var _loginRepository = (ILoginRepository)actionContext.RequestContext.Configuration.DependencyResolver.GetService(typeof(ILoginRepository));//.GetService(typeof(ILoginRepository));
-                //var _loginRepository = new LoginRepository();
-                //var _loginRepository = (ILoginRepository)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(ILoginRepository));
-
+                //Get the instance of the repository using the dependancy resolver 
+                var _loginRepository = (ILoginRepository)actionContext.RequestContext.Configuration.DependencyResolver.GetService(typeof(ILoginRepository));
+              
                 authTokenVerify = new AuthTokenVerify(_loginRepository);
-                if (!authTokenVerify.VerifyAuthToken(authHeader))//Verify the token and return bool)
+                if (!authTokenVerify.VerifyAuthToken(authHeader))
                 {
-                    //if not valid
                     actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized, "Invalid token");
                 }
-
             }
-
             base.OnAuthorization(actionContext);
         }
     }

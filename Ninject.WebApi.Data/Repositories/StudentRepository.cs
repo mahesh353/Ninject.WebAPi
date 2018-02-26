@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Ninject.WebApi.Core.Models;
+﻿using System.Collections.Generic;
 using Ninject.WebApi.Core.RepositoryInterfaces;
 using System.Linq;
 
@@ -10,14 +8,6 @@ namespace Ninject.WebApi.Data.Repositories
     {
         public List<Ninject.WebApi.Core.Models.Student> stundentList = new List<Ninject.WebApi.Core.Models.Student>();
         
-
-        public StudentRepository()
-        {
-
-            
-
-        }
-
         List<Core.Models.Student> IStudentRepository.GetStudents()
         {
             using (MPEntities mp = new MPEntities())
