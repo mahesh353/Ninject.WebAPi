@@ -7,6 +7,8 @@ using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using WebApiContrib.Formatting.Jsonp;
 using System.Web.Http.Cors;
+using Serilog;
+using Ninject.WebApi.Filters;
 
 namespace Ninject.WebApi
 {
@@ -18,6 +20,7 @@ namespace Ninject.WebApi
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+            config.Filters.Add(new AuthorizeTokenFilter());
 
             //create the instance of jsonp formatter
             //var jsonpFormatter = new JsonpMediaTypeFormatter(config.Formatters.JsonFormatter);
@@ -35,6 +38,19 @@ namespace Ninject.WebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // Get application base directory
+            string basedir = AppDomain.CurrentDomain.BaseDirectory;
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Verbose()
+                .WriteTo.File(basedir + "/log.txt")
+                .CreateLogger();
+
+
+
+
+            Log.Information("Hello, world!");
         }
     }
 }

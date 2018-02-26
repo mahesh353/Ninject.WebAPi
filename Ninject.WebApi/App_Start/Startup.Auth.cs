@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using Ninject.WebApi.Providers;
 using Ninject.WebApi.Models;
+using Serilog;
 
 namespace Ninject.WebApi
 {
@@ -45,6 +46,8 @@ namespace Ninject.WebApi
 
             // Enable the application to use bearer tokens to authenticate users
             app.UseOAuthBearerTokens(OAuthOptions);
+            
+          
 
             // Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(

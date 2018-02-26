@@ -26,5 +26,6 @@ namespace Ninject.WebApi.Data
         }
     
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<UserDetail> UserDetails { get; set; }
     }
 }

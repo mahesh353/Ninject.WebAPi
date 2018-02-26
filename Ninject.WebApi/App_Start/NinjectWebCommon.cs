@@ -68,7 +68,7 @@ namespace SimpleWebApi2.Ninject.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IStudentRepository>().To<StudentRepository>();
-           
+            kernel.Bind<ILoginRepository>().To<LoginRepository>();
         }
     }
 }

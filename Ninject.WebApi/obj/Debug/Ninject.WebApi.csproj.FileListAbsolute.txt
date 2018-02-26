@@ -214,3 +214,11 @@ D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Cors.dll
 D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Cors.dll
 D:\practise\Ninject\Ninject.WebApi\bin\System.Web.Http.Cors.xml
 D:\practise\Ninject\Ninject.WebApi\bin\Swashbuckle.Core.dll
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.dll
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.Sinks.Console.dll
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.xml
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.Sinks.Console.xml
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.Sinks.File.dll
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.Sinks.File.xml
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.Sinks.RollingFile.dll
+D:\practise\Ninject\Ninject.WebApi\bin\Serilog.Sinks.RollingFile.xml

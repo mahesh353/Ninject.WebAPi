@@ -16,6 +16,7 @@ namespace Ninject.WebApi.Controllers
 
         public IEnumerable<Student> Get()
         {
+            
             return _studentRepository.GetStudents();
         }
 

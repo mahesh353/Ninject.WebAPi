@@ -1,0 +1,2 @@
+2018-02-19 17:35:06.206 +05:30 [Information] Hello, world!
+2018-02-19 17:36:58.543 +05:30 [Information] Hello, world!

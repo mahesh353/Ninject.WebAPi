@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\LoginRepository.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
     <Compile Include="Student.cs">
       <DependentUpon>StudentDataModel.tt</DependentUpon>
@@ -73,6 +74,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetail.cs">
+      <DependentUpon>StudentDataModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

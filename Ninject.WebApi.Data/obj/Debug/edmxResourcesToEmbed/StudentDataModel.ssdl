@@ -8,7 +8,17 @@
     <Property Name="Name" Type="varchar" MaxLength="50" />
     <Property Name="Address" Type="varchar" MaxLength="150" />
   </EntityType>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="Password" Type="varchar" MaxLength="20" />
+    <Property Name="Token" Type="varchar" MaxLength="1000" />
+  </EntityType>
   <EntityContainer Name="MPModelStoreContainer">
     <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserDetail" EntityType="Self.UserDetail" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>
