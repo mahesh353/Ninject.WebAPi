@@ -1,8 +1,4 @@
 ﻿using Ninject.WebApi.Core.RepositoryInterfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Ninject.WebApi.Filters
 {
@@ -20,11 +16,9 @@ namespace Ninject.WebApi.Filters
 
             if (authHeader != null)
             {
-                string authToken = authHeader.Substring("Basic ".Length).Trim();
-                if (authToken != null)
-                {
-                    return _loginRepository.ValidateToken(authHeader);
-                }
+
+                return _loginRepository.ValidateToken(authHeader);
+
             }
             return isValid;
         }
